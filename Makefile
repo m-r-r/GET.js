@@ -1,19 +1,25 @@
-all:	GET.js GET.min.js node
 
-GET.js:	GET.coffee
-	coffee -c GET.coffee
+all:	build/GET.js build/GET.min.js
 
-GET.min.js:	GET.js
-	head -n 6 GET.js | tr '\n' ' ' > GET.min.js
-	jsmin GET.js >> GET.min.js
+build/:
+	mkdir -p build
 
-node:	GET.js
-	mkdir -p node_modules/GET.js
-	cp -v package.json GET.js node_modules/GET.js/
+build/GET.js:	GET.coffee build/
+	coffee -o build -c GET.coffee
+
+build/GET.min.js:	build/GET.js
+	head -n 6 build/GET.js | tr '\n' ' ' > build/GET.min.js
+	jsmin build/GET.js >> build/GET.min.js
 
 rm:
-	rm *.js
+	rm -rv build
+
+node:	build/GET.js
+	mkdir -p build/node-package/lib
+	cp build/GET.js build/node-package/lib
+	cp package.json COPYING build/node-package
+	cd build && tar -czvf GET.js.tgz node-package
 
 rebuild:	rm all
 
-.PHONY: node rm rebuild
+.PHONY: rm rebuild node

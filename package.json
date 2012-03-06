@@ -1,9 +1,9 @@
 {
   "name": "GET.js",
   "description": "URL query string parser",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "http://m-r-r.github.com/GET.js",
-  "main": "./GET.js",
+  "main": "lib/GET.js",
   "author": {
     "name": "Mickaël Raybaud-Roig",
     "email": "raybaudroigm@gmail.com",
@@ -12,6 +12,9 @@
   "engines": {
     "node": "*",
     "browsers": "*"
+  },
+  "directories": {
+    "lib": "lib"
   },
   "repository": {
     "type": "git",
