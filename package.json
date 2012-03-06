@@ -17,5 +17,5 @@
     "type": "git",
     "url": "git://github.com/m-r-r/GET.js.git"
   },
-  "devDependencies": ["coffee-script"]
+  "devDependencies": ["coffee-script", "jsmin"]
 }
