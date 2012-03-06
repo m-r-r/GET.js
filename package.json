@@ -1,0 +1,21 @@
+{
+  "name": "GET.js",
+  "description": "URL query string parser",
+  "version": "0.2",
+  "homepage": "http://m-r-r.github.com/GET.js",
+  "main": "./GET.js",
+  "author": {
+    "name": "Mickaël Raybaud-Roig",
+    "email": "raybaudroigm@gmail.com",
+    "url": "http://dev-random.info"
+  },
+  "engines": {
+    "node": "*",
+    "browsers": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/m-r-r/GET.js.git"
+  },
+  "devDependencies": ["coffee-script"]
+}
