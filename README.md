@@ -17,7 +17,7 @@ Just download the script and include it in your page, like this:
 
 There is also a minified version:
 
-        <script type='text/javascript' src='GET.min.js'></script>
+    <script type='text/javascript' src='GET.min.js'></script>
 
 ## Licence
 
