@@ -1,0 +1,110 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Get.js</title>
+  <meta name="description" content="Get the data passed to the current page via the URL parameters like in PHP">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Get.js</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Get the data passed to the current page via the URL parameters like in PHP</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/m-r-r/GET.js/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/m-r-r/GET.js/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/m-r-r/GET.js" class="code">View Get.js on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>GET.js</h1>
+
+<p>GET.js helps to retreive the data passed in a URL query string.</p>
+
+<p>It can be used in a browser or in <a href="http://nodejs.org">Node.js</a></p>
+
+<h2>Installation</h2>
+
+<p>Just download the script and include it in your page, like this:</p>
+
+<pre><code>&lt;script type='text/javascript' src='GET.js'&gt;&lt;/script&gt;
+</code></pre>
+
+<p>There is also a minified version:</p>
+
+<pre><code>&lt;script type='text/javascript' src='GET.min.js'&gt;&lt;/script&gt;
+</code></pre>
+
+<p>GET.js can also be used in <a href="http://nodejs.org">node.js</a> and is available through the <a href="http://npmjs.org">npm</a>:</p>
+
+<pre><code>npm install GET.js
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>If you use GET.js in a Web browser, you can access the data in the query string of the current page through the <code>$_GET</code> array:</p>
+
+<pre><code>console.log(document.location.href); // foo.html?bar=baz&amp;hello=world
+console.log($_GET['bar']); // baz
+console.log($_GET['hello']); // world
+</code></pre>
+
+<p>You can also use the <code>parse_query</code> function to parse the query string of another URL:</p>
+
+<pre><code>var url = 'http://foo.bar/?a=1&amp;b=2&amp;c=3';
+console.log(parse_query(url)); // {a: 1, b: 2, c: 3}
+</code></pre>
+
+<p>If you have installed GET.js through the <a href="http://npmjs.org">npm</a>, you can use it in <a href="http://nodejs.org">node.js</a> like this:</p>
+
+<pre><code>var GETjs = require('GET.js');  // import it first
+
+var url = 'http://foo.bar/?a=1&amp;b=2&amp;c=3';
+GETjs.parse_query(url); // {a: 1, b: 2, c: 3} // Use it as in the browser
+</code></pre>
+
+<h2>Licence</h2>
+
+<p>GET.js is licenced under the BSD 3-clauses license, see the <code>COPYING</code> file for details ...</p>
+
+<p><em>Have fun !</em></p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/m-r-r" class="avatar"><img src="https://secure.gravatar.com/avatar/883e09272b7eb240e356aaa603cabf1c?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="48" height="48"/></a> <a href="https://github.com/m-r-r">m-r-r</a> maintains <a href="https://github.com/m-r-r/GET.js">Get.js</a></p>
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/m-r-r/GET.js/tarball/master" class="tar">tar</a><a href="https://github.com/m-r-r/GET.js/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
