@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/m-r-r/GET.js.png)](http://travis-ci.org/m-r-r/GET.js)
 # GET.js
 
 GET.js helps to retreive the data passed in a URL query string.
